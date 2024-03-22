@@ -1,0 +1,278 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    background: url(img/fotoTitulo.jpg) center center no-repeat;
+    background-size: cover;
+    height: 200px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    margin: 0; 
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #e74c3c;
+
+}
+
+
+/*nav*/
+
+nav {
+    background-color: #333; 
+    padding: 10px 0; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 150px; 
+}
+
+a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s; 
+}
+
+a:hover {
+    color: #007BFF; 
+}
+
+/*barra para buscar*/
+
+/* Estilos para la barra buscadora */
+.barraBuscadora {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilos para el formulario */
+.barraBuscadora form {
+    display: inline-block;
+}
+
+/* Estilos para el cuadro de búsqueda */
+#search-box {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de búsqueda */
+#search-button {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cambiar el color del botón cuando se pasa el cursor sobre él */
+#search-button:hover {
+    background-color: #0056b3; /* Cambiar a un tono más oscuro */
+}
+
+
+/*para las cartas*/
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: 1px solid white; /* Corregido: se agregó "solid" */
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: white;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+
+
+
+
+/*footer*/
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para el contenedor de las redes sociales */
+.redesSociaales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redesSociaales ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Estilos para las imágenes de las redes sociales */
+.redesSociaales ul li img {
+    width: 60px; /* Tamaño de las imágenes */
+    height: 60px;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    width: 150px; /* Tamaño del logotipo */
+    border-radius: 100px;
+}
+
+/* Estilos para el nombre del canal */
+.nombreCanal h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Estilos para la lista de enlaces extras */
+.extras ul {
+    list-style: none;
+    padding: 0;
+}
+
+.extras ul li {
+    margin: 5px 0;
+}
+
+/* Estilos para los enlaces extras */
+.extras ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cambiar el color de los enlaces cuando se pasa el cursor sobre ellos */
+.extras ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilos para los derechos de autor y la imagen */
+.derechosDeAutor img {
+    width: 100px; /* Tamaño de la imagen de derechos de autor */
+}
+
+/* Estilos para el texto de derechos de autor */
+.derechosDeAutor p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Estilos para el texto de copyright */
+.copy p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
+
+
