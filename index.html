@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Déjate de Historias - Inicio</title>
+    <style>
+        .news-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .bg-image {
+            background-image: url(img/encabezado.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+            text-align: center;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .highlight-text {
+            display: inline;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 0 10px;
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image text-center">
+        <h1>DÉJATE DE HISTORIAS</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Déjate de Historias</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <h2>Publicaciones Recientes</h2>
+        <div class="card news-container p-3">
+            <div class="news-item mb-3">
+                <h5 class="news-title">Armonías bajo asedio: El violinista de Stalingrado</h5>
+                <p class="news-description text-justify">En este vídeo narramos la historia del violinista y músico Mikhail Goldstein, quien persistió tocando su violín a pesar de los bombardeos y el asedio de Stalingrado durante la Segunda Guerra Mundial. El documental muestra cómo Goldstein, a través de su música, lograba mantener la esperanza y elevar el espíritu de los soldados y civiles atrapados en la ciudad sitiada. Es una conmovedora historia que resalta el poder sanador de la música incluso en los momentos más oscuros de la guerra.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ANguz6dnCTs?rel=0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><img src="img/instagram.png" alt="instagram" class="img-fluid"
+                                style="width: 60px;"></li>
+                        <li class="list-inline-item"><img src="img/twitter.jpeg" alt="Twitter" class="img-fluid"
+                                style="width: 60px;"></li>
+                        <li class="list-inline-item"><img src="img/yt.png" alt="YouTube" class="img-fluid"
+                                style="width: 60px;"></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/logo.jpg" alt="Déjate de Historias" class="img-fluid rounded-circle"
+                        style="width: 150px;">
+                    <h2 class="mt-2">Déjate de Historias</h2>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="curiosidades.html" class="text-white">Curiosidades</a></li>
+                        <li><a href="acontecimientos.html" class="text-white">Acontecimientos</a></li>
+                        <li><a href="noticias.html" class="text-white">Noticias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <img src="img/CCBYNCND.png" alt="CCBYNCND" class="img-fluid" style="width: 100px;">
+                <p class="mt-2">Attribution-NonCommercial-NoDerivatives 3.0 IGO</p>
+                <p>© Déjate de Historias 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
