@@ -6,7 +6,6 @@
 .bg-image {
     background-image: url(img/encabezado.jpeg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     padding: 100px 0;
     text-align: center;
