@@ -1,0 +1,86 @@
+.news-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.bg-image {
+    background-image: url(img/encabezado.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.highlight-text {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0 10px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.calendar {
+    margin-top: 20px;
+    background: url(img/papelCalendar.jpeg);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    /* Ajusta esta propiedad según el tamaño deseado */
+    margin: 0 auto;
+}
+
+.calendar h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.calendar h2 button {
+    font-size: 14px;
+}
+
+.calendar ol {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 3px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.calendar ol li {
+    text-align: center;
+    padding: 3px 0;
+}
+
+.calendar .btn-round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    color: black;
+    border: 1px solid #dee2e6;
+    font-size: 12px;
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: wheat;
+}
+
+.news-description {
+    text-align: justify;
+}
+
+.event-description {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
