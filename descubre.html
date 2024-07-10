@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,25 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .bg-image {
+            background-image: url('img/background.jpg');
+            height: 300px; /* Ajusta la altura según sea necesario */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .custom-header {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +63,8 @@
                     </li>
                     <li class="nav-item">
                         <form class="form-inline ml-lg-3 my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                         </form>
                     </li>
@@ -54,8 +74,8 @@
     </nav>
 
     <!-- Imagen de fondo y título -->
-    <div class="bg-image text-center">
-        <h1 class="custom-header mt-4"></h1>
+    <div class="bg-image">
+        <h1 class="custom-header mt-4">Explora la Historia</h1>
     </div>
 
     <!-- Alerta de desarrollo -->
@@ -68,13 +88,13 @@
 
     <!-- Sección Edad Media -->
     <section class="container my-4">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/descubre/edadMedia.jpg" class="img-fluid" alt="Edad Media">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4">
+                <img src="img/descubre/edadMedia.jpg" class="img-fluid rounded" alt="Edad Media">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 mb-4">
                 <h2>Edad Media</h2>
-                <p>Embárcate en un viaje a través del misterio y la magia de las leyendas, donde cada relato teje historias cautivadoras llenas de héroes legendarios, criaturas fantásticas y destinos extraordinarios que desafían la imaginación.</p>
+                <p class="lead">Embárcate en un viaje a través del misterio y la magia de las leyendas, donde cada relato teje historias cautivadoras llenas de héroes legendarios, criaturas fantásticas y destinos extraordinarios que desafían la imaginación.</p>
                 <a href="edadMedia.html" class="btn btn-outline-success">Ver más</a>
             </div>
         </div>
@@ -83,14 +103,14 @@
     <!-- Sección Prehistoria -->
     <section class="bg-light py-5">
         <div class="container my-4">
-            <div class="row">
-                <div class="col-md-8">
+            <div class="row align-items-center">
+                <div class="col-md-8 mb-4">
                     <h2>Prehistoria Humana</h2>
-                    <p>Explora los misteriosos albores de la humanidad en la Prehistoria, un viaje fascinante hacia los orígenes de nuestra especie, donde descubrirás la vida de nuestros ancestros, sus increíbles logros y la lucha por sobrevivir en un mundo antiguo y desconocido.</p>
+                    <p class="lead">Explora los misteriosos albores de la humanidad en la Prehistoria, un viaje fascinante hacia los orígenes de nuestra especie, donde descubrirás la vida de nuestros ancestros, sus increíbles logros y la lucha por sobrevivir en un mundo antiguo y desconocido.</p>
                     <a href="prehistoriaHumana.html" class="btn btn-outline-success">Ver más</a>
                 </div>
-                <div class="col-md-4">
-                    <img src="img/descubre/Prehistoria.jpg" class="img-fluid" alt="Prehistoria">
+                <div class="col-md-4 mb-4">
+                    <img src="img/descubre/Prehistoria.jpg" class="img-fluid rounded" alt="Prehistoria">
                 </div>
             </div>
         </div>
@@ -98,14 +118,14 @@
 
     <!-- Sección Leyendas -->
     <section class="container my-4">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/descubre/leyendas.jpg" class="img-fluid" alt="Leyendas">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4">
+                <img src="img/descubre/leyendas.jpg" class="img-fluid rounded" alt="Leyendas">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 mb-4">
                 <h2>Leyendas</h2>
-                <p>Embárcate en un viaje a través del misterio y la magia de las leyendas, donde cada relato teje historias cautivadoras llenas de héroes legendarios, criaturas fantásticas y destinos extraordinarios que desafían la imaginación.</p>
-                <a href="europa.html" class="btn btn-outline-success">Ver más</a>
+                <p class="lead">Embárcate en un viaje a través del misterio y la magia de las leyendas, donde cada relato teje historias cautivadoras llenas de héroes legendarios, criaturas fantásticas y destinos extraordinarios que desafían la imaginación.</p>
+                <a href="leyendas.html" class="btn btn-outline-success">Ver más</a>
             </div>
         </div>
     </section>
