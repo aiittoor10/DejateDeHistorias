@@ -22,54 +22,9 @@
     font-size: 3rem;
 }
 
-.calendar {
-    margin-top: 20px;
-    background: url(img/papelCalendar.jpeg);
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 300px;
-    /* Ajusta esta propiedad según el tamaño deseado */
-    margin: 0 auto;
-}
-
-.calendar h2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.calendar h2 button {
-    font-size: 14px;
-}
-
-.calendar ol {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 3px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.calendar ol li {
-    text-align: center;
-    padding: 3px 0;
-}
-
-.calendar .btn-round {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: transparent;
-    color: black;
-    border: 1px solid #dee2e6;
-    font-size: 12px;
-    padding: 0;
-}
 
 .btn-primary {
-    background-color: wheat;
+    background-color: rgb(154, 110, 236);
 }
 
 .news-description {
@@ -83,3 +38,23 @@
     border: 1px solid #dee2e6;
     border-radius: 5px;
 }
+
+.circle-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-container img {
+    width: 100%;
+    height: auto;
+}
+
+.historico {
+    background-color: #000000; /* Color de fondo para resaltar */
+    color: #fff; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+  }
