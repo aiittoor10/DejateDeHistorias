@@ -1,3 +1,4 @@
+
 .news-container {
     max-height: 500px;
     overflow-y: auto;
@@ -58,3 +59,14 @@
     color: #fff; /* Color de texto */
     font-weight: bold; /* Texto en negrita */
   }
+
+  /* Estilos personalizados para el calendario */
+#calendar {
+    margin-top: 20px; /* Ajustar el margen superior según sea necesario */
+}
+
+.calendar-day {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
