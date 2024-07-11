@@ -42,7 +42,7 @@
                             <a class="dropdown-item" href="contacto.html">Leyendas</a>
                             <a class="dropdown-item" href="contacto.html">Europa</a>
                             <a class="dropdown-item" href="contacto.html">Prehistoria Humana</a>
-                                                        <div class="dropdown-divider"></div>
+                            <div class="dropdown-divider"></div>
 
                             <a class="dropdown-item" href="descubre.html">Descure Más...</a>
 
@@ -122,7 +122,7 @@
                         <li><a href="curiosidades.html" class="text-white">Curiosidades</a></li>
                         <li><a href="calendario.html" class="text-white">Acontecimientos</a></li>
                         <li><a href="noticias.html" class="text-white">Noticias</a></li>
-                                                <li><a href="creadores.html" class="text-white">Sobre los creadores</a></li>
+                        <li><a href="creadores.html" class="text-white">Sobre los creadores</a></li>
 
                     </ul>
                 </div>
@@ -135,100 +135,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Array de nombres de meses y días en cada mes (asumiendo un año no bisiesto para simplicidad)
-            const meses = [
-                { nombre: 'Enero', dias: 31 },
-                { nombre: 'Febrero', dias: 28 },
-                { nombre: 'Marzo', dias: 31 },
-                { nombre: 'Abril', dias: 30 },
-                { nombre: 'Mayo', dias: 31 },
-                { nombre: 'Junio', dias: 30 },
-                { nombre: 'Julio', dias: 31 },
-                { nombre: 'Agosto', dias: 31 },
-                { nombre: 'Septiembre', dias: 30 },
-                { nombre: 'Octubre', dias: 31 },
-                { nombre: 'Noviembre', dias: 30 },
-                { nombre: 'Diciembre', dias: 31 }
-            ];
-
-            // Eventos históricos por día (solo como ejemplo)
-            const eventos = {
-                'Enero': {
-                    1: 'Nació José',
-                    2: 'Murió Antonio',
-                    3: 'Evento del 3 de Enero',
-                    // Añade más eventos aquí
-                },
-                'Febrero': {
-                    1: 'Evento del 1 de Febrero',
-                    2: 'Evento del 2 de Febrero',
-                    // Añade más eventos aquí
-                },
-                // Añade eventos para otros meses aquí
-            };
-
-            // Índice inicial de mes (enero es 0)
-            let mesActual = 5;
-
-            // Elementos del DOM
-            const monthName = document.getElementById('month-name');
-            const nextMonthButton = document.getElementById('next-month');
-            const daysList = document.getElementById('days');
-            const eventDescription = document.getElementById('event-description');
-
-            // Función para avanzar al siguiente mes
-            function siguienteMes() {
-                // Incrementar el índice del mes
-                mesActual++;
-
-                // Si el índice supera el número de meses, volver al inicio
-                if (mesActual >= meses.length) {
-                    mesActual = 0;
-                }
-
-                // Actualizar el nombre del mes en el encabezado
-                monthName.innerHTML = `${meses[mesActual].nombre} <button type="button" class="btn btn-primary" id="next-month"><img src="img/proximo.png" alt="flecha"></button>`;
-
-                // Limpiar la lista de días antes de añadir los nuevos días del mes siguiente
-                daysList.innerHTML = '';
-
-                // Obtener la cantidad de días para el mes siguiente
-                const diasMesSiguiente = meses[mesActual].dias;
-
-                // Generar dinámicamente los botones de días del mes siguiente
-                for (let dia = 1; dia <= diasMesSiguiente; dia++) {
-                    const btnDia = document.createElement('button');
-                    btnDia.setAttribute('type', 'button');
-                    btnDia.classList.add('btn', 'btn-primary', 'btn-round');
-                    btnDia.textContent = dia;
-                    const liDia = document.createElement('li');
-                    liDia.appendChild(btnDia);
-                    daysList.appendChild(liDia);
-
-                    // Añadir evento click al botón del día
-                    btnDia.addEventListener('click', () => mostrarEvento(dia, meses[mesActual].nombre));
-                }
-
-                // Reasignar el evento click al nuevo botón de siguiente mes
-                document.getElementById('next-month').addEventListener('click', siguienteMes);
-            }
-
-            // Función para mostrar el evento del día seleccionado
-            function mostrarEvento(dia, mes) {
-                const evento = eventos[mes] && eventos[mes][dia] ? eventos[mes][dia] : `No hay eventos registrados para el día ${dia} de ${mes}.`;
-                eventDescription.style.display = 'block';
-                eventDescription.textContent = evento;
-            }
-
-            // Evento click para el botón de siguiente mes
-            nextMonthButton.addEventListener('click', siguienteMes);
-
-            // Inicializar con los días del primer mes (enero)
-            siguienteMes();
-        });
-    </script>
+    <script src="calendario.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
