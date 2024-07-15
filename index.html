@@ -118,9 +118,8 @@
                 <div class="container mt-5">
                     <h2>LO NUEVO!</h2>
                     <div class="card p-3">
-                            <h5>A un Botón de la Guerra: Vasily Arkhipov y la Crisis de los Misiles</h5>
+                        <h5>A un Botón de la Guerra: Vasily Arkhipov y la Crisis de los Misiles</h5>
 
-                        
                         <p class="text-justify mt-2">¡Hola a todos! En el video de hoy, exploraremos la increíble
                             historia de Vasily
                             Arkhipov y su papel
@@ -157,16 +156,20 @@
                     <li class="list-group-item"><a href="#">Antártida</a></li>
                 </ul>
                 <div class="container mt-5">
-                    <h1 class="my-4">Buscar Eventos Históricos</h1>
+                    <h2 class="my-4">¿Qué pasó cuando naciste?</h2>
                     <div class="input-group mb-3">
-                        <input type="text" id="search" class="form-control"
-                            placeholder="Ingrese una fecha o evento">
+                        <input type="text" id="search" class="form-control" placeholder="Ingrese una fecha o evento">
                         <div class="input-group-append">
                             <button class="btn btn-primary" onclick="buscarEvento()">Buscar</button>
                         </div>
                     </div>
-                    <div id="resultados"></div>
+                    <div id="resultados" class="mt-4" style="max-height: 400px; overflow-y: auto;">
+                        <div id="resultado-busqueda" style="padding-bottom: 20px;"></div>
+                        <img id="imagen-resultado" src="img/eventoHistorico.jpeg" alt="Imagen de resultado" class="img-fluid mt-3">
+                    </div>
                 </div>
+                
+
             </div>
         </div>
     </div>
@@ -230,20 +233,17 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="https://www.instagram.com/ddh_yt/">
-                                <img src="img/instagram.png" alt="Instagram" class="img-fluid"
-                                    style="width: 60px;">
+                                <img src="img/instagram.png" alt="Instagram" class="img-fluid" style="width: 60px;">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com/tu_perfil"> <!-- Añade el enlace de Twitter aquí -->
-                                <img src="img/twitter.jpeg" alt="Twitter" class="img-fluid"
-                                    style="width: 60px;">
+                                <img src="img/twitter.jpeg" alt="Twitter" class="img-fluid" style="width: 60px;">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.youtube.com/@ddh_yt">
-                                <img src="img/yt.png" alt="YouTube" class="img-fluid"
-                                    style="width: 60px;">
+                                <img src="img/yt.png" alt="YouTube" class="img-fluid" style="width: 60px;">
                             </a>
                         </li>
                     </ul>
