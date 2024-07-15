@@ -18,7 +18,13 @@
             font-weight: bolder;
         }
 
+        .article-thumbnail {
+            max-width: 30px; /* Tamaño máximo para la imagen */
+        }
 
+        h6{
+            margin-left: -122px;
+        }
     </style>
 </head>
 
@@ -97,28 +103,37 @@
                 <div class="container mt-5">
                     <h2>LO NUEVO!</h2>
                     <div class="card p-3">
-                        <div class="mb-3">
-                            <h5>A un Botón de la Guerra: Vasily Arkhipov y la Crisis de los Misiles</h5>
-                            <p class="text-justify">¡Hola a todos! En el video de hoy, exploraremos la increíble
-                                historia de Vasily
-                                Arkhipov y su papel
-                                crucial durante la Crisis de los Misiles en Cuba en 1962. Descubriremos cómo este
-                                oficial de la
-                                Marina Soviética tomó una decisión valiente y crucial que evitó una guerra nuclear entre
-                                Estados
-                                Unidos y la Unión Soviética, y cómo su acto de coraje ha sido reconocido como uno de los
-                                momentos
-                                más importantes y heroicos de la Guerra Fría. Acompáñennos mientras desglosamos los
-                                eventos que
-                                llevaron a este punto crítico y celebramos el legado de un hombre que, literalmente,
-                                salvó al mundo.
-                            </p>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UUOc7x3ESOE"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="container mt-4">
+                            <h5 class="mb-3">A un Botón de la Guerra: Vasily Arkhipov y la Crisis de los Misiles</h5>
+                            <div class="row align-items-center">
+                                <div class="col-sm-3">
+                                    <img src="img/perfil.png" class="img-fluid article-thumbnail"
+                                        alt="Imagen pequeña">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h6>Jesús</h6>
+                                </div>
                             </div>
+                        </div>
+                        <p class="text-justify mt-3">¡Hola a todos! En el video de hoy, exploraremos la increíble
+                            historia de Vasily
+                            Arkhipov y su papel
+                            crucial durante la Crisis de los Misiles en Cuba en 1962. Descubriremos cómo este
+                            oficial de la
+                            Marina Soviética tomó una decisión valiente y crucial que evitó una guerra nuclear entre
+                            Estados
+                            Unidos y la Unión Soviética, y cómo su acto de coraje ha sido reconocido como uno de los
+                            momentos
+                            más importantes y heroicos de la Guerra Fría. Acompáñennos mientras desglosamos los
+                            eventos que
+                            llevaron a este punto crítico y celebramos el legado de un hombre que, literalmente,
+                            salvó al mundo.
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UUOc7x3ESOE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -138,7 +153,8 @@
                 <div class="container mt-5">
                     <h1 class="my-4">Buscar Eventos Históricos</h1>
                     <div class="input-group mb-3">
-                        <input type="text" id="search" class="form-control" placeholder="Ingrese una fecha o evento">
+                        <input type="text" id="search" class="form-control"
+                            placeholder="Ingrese una fecha o evento">
                         <div class="input-group-append">
                             <button class="btn btn-primary" onclick="buscarEvento()">Buscar</button>
                         </div>
@@ -208,17 +224,20 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="https://www.instagram.com/ddh_yt/">
-                                <img src="img/instagram.png" alt="Instagram" class="img-fluid" style="width: 60px;">
+                                <img src="img/instagram.png" alt="Instagram" class="img-fluid"
+                                    style="width: 60px;">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://twitter.com/tu_perfil"> <!-- Añade el enlace de Twitter aquí -->
-                                <img src="img/twitter.jpeg" alt="Twitter" class="img-fluid" style="width: 60px;">
+                                <img src="img/twitter.jpeg" alt="Twitter" class="img-fluid"
+                                    style="width: 60px;">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.youtube.com/@ddh_yt">
-                                <img src="img/yt.png" alt="YouTube" class="img-fluid" style="width: 60px;">
+                                <img src="img/yt.png" alt="YouTube" class="img-fluid"
+                                    style="width: 60px;">
                             </a>
                         </li>
                     </ul>
