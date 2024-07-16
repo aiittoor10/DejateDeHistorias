@@ -72,11 +72,9 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="creadores.html">Sobre los Creadores</a></li>
+                    <li class="nav-item"><a href="newsletter.html" class="nav-link">Newsletter</a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
+
             </div>
         </div>
     </nav>
@@ -103,6 +101,17 @@
             </div>
         </div>
     </div>
+    <div class="container text-center">
+        <form class="form-inline justify-content-center my-2 my-lg-0">
+            <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Explora historias perdidas..."
+                style="width: 400px;" aria-label="Buscar">
+            <button class="btn btn-outline-success btn-lg my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </div>
+
+
+
+
 
     <div class="container mt-3">
         <div class="row">
@@ -158,17 +167,19 @@
                 <div class="container mt-5">
                     <h2 class="my-4">¿Qué pasó cuando naciste?</h2>
                     <div class="input-group mb-3">
-                        <input type="text" id="search" class="form-control" placeholder="Ingrese su fecha de nacimiento (DD/MM)">
+                        <input type="text" id="search" class="form-control"
+                            placeholder="Ingrese su fecha de nacimiento (DD/MM)">
                         <div class="input-group-append">
                             <button class="btn btn-primary" onclick="buscarEvento()">Buscar</button>
                         </div>
                     </div>
                     <div id="resultados" class="mt-4" style="max-height: 400px; overflow-y: auto;">
                         <div id="resultado-busqueda" style="padding-bottom: 20px;"></div>
-                        <img id="imagen-resultado" src="img/eventoHistorico.jpeg" alt="Imagen de resultado" class="img-fluid mt-3">
+                        <img id="imagen-resultado" src="img/eventoHistorico.jpeg" alt="Imagen de resultado" style="height: 278px;"
+                            class="img-fluid mt-3">
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
@@ -225,6 +236,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
